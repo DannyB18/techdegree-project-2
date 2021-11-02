@@ -1,0 +1,77 @@
+/* ---- Base Styles ---- */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  line-height: 1.5;
+  background-color: lightgray;
+}
+
+header {
+  margin: 0 1.5rem;
+}
+
+main {
+  background-color: white;
+}
+
+.heading {
+  margin: 3.5rem auto;
+}
+
+.project {
+  margin: 0 1rem;
+}
+
+ul li {
+  text-align: center;
+}
+
+header,
+section,
+footer,
+div,
+.header-nav,
+.footer-nav,
+.portfolio {
+  display: flex;
+}
+
+header,
+section,
+div,
+footer,
+.header-nav,
+.portfolio {
+  flex-direction: column;
+}
+
+.nav-item {
+  background-color: white;
+  padding: 1rem;
+}
+
+.portfolio {
+  width: 100%;
+}
+
+.footer-nav {
+  display: none;
+}
+
+h1,
+h2,
+h3 {
+  margin: auto;
+}
+
+.main-nav {
+  margin: auto;
+}
+h3 {
+  margin-top: 1rem;
+}
+/* ---- Main Styles ---- */
+
+/* ---- Media Queries ---- */
