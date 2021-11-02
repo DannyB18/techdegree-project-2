@@ -16,9 +16,12 @@ main {
 }
 
 header,
-section,
+section {
+  margin: 0 1rem;
+}
+
 footer {
-  margin: 1rem;
+  margin-top: 1rem;
 }
 
 h1,
@@ -33,22 +36,24 @@ h2 {
   text-transform: uppercase;
   font-size: 1.1rem;
   font-weight: 700;
-  padding: 15%;
 }
+
 h3 {
   font-weight: 500;
 }
 nav {
-  margin: 50px 0;
+  /* margin: 50px 0; */
   text-transform: uppercase;
+  color: black;
 }
 
-header p {
+header p,
+#contact p {
   color: #777;
 }
 
 img {
-  max-width: 70%;
+  max-width: 100%;
 }
 
 a {
@@ -63,27 +68,67 @@ span {
   margin: 0 1rem;
 }
 
+.heading {
+  padding: 3rem;
+  margin: 0;
+}
+
+.project {
+  margin-bottom: 20%;
+}
+
+.project:last-child {
+  padding-bottom: 4rem;
+  margin-bottom: 0;
+}
+
+img.profile-image {
+  max-width: 70%;
+}
+
+.containter,
 ul.header-nav,
-li.nav-item,
-nav.secondary-nav,
-ul.footer-nav {
+li.nav-item
+/* ul.footer-nav, */
+/* nav.secondary-nav  */ {
   display: flex;
 }
 
 ul.header-nav {
   flex-direction: column;
 }
+
+li.nav-item,
+#bottom-nav {
+  margin: 0.15rem 0;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
 li.nav-item {
   background: white;
-  margin: 0.15rem 0;
-  font-weight: 500;
+}
+
+#bottom-nav {
+  display: flex;
+  justify-content: space-between;
+  margin: 0.5rem 0;
 }
 
 li.footer-nav-item {
   display: none;
 }
 
+#intro {
+  padding: 3rem 0;
+  margin: 0;
+}
+
 #contact {
-  padding: 2.5rem 0;
   border-bottom: 1px solid #ddd;
+  padding-bottom: 3rem;
+}
+
+.to-top {
+  order: 1;
 }
