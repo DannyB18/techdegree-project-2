@@ -150,7 +150,7 @@ ul.footer-nav {
   }
 
   .intro-item {
-    margin: 10px;
+    margin: 0 0.5rem;
   }
 
   #intro img {
@@ -171,6 +171,9 @@ ul.footer-nav {
     align-items: center;
   }
 
+  .contact-invite {
+    padding: 0 15vw 3vw;
+  }
   .project {
     margin: 0 0.5rem 4rem;
     flex: 1 40%;
@@ -187,7 +190,6 @@ ul.footer-nav {
 
   li.nav-item {
     background-color: rgba(0, 0, 0, 0);
-    /* flex: 1; */
   }
 
   .footer-nav-item a {
@@ -198,4 +200,11 @@ ul.footer-nav {
   .to-top {
     display: none;
   }
+}
+
+@media screen and (min-width: 1024px) {
+}
+
+.project {
+  flex-basis: 0;
 }
