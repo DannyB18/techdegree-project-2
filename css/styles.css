@@ -29,6 +29,9 @@ h2 {
   text-transform: uppercase;
   font-size: 1.1rem;
   font-weight: 700;
+  padding: 3rem;
+  margin: auto;
+  width: 100%;
 }
 
 h3 {
@@ -72,17 +75,13 @@ span {
   margin: 0 1rem;
 }
 
-.heading {
-  padding: 3rem;
-  margin: auto;
-  width: 100%;
-}
-
-.project {
+.project,
+.skill {
   margin-bottom: 20%;
 }
 
-.project:last-child {
+.project:last-child,
+.skill:last-child {
   padding-bottom: 4rem;
   margin-bottom: 0;
 }
@@ -94,6 +93,7 @@ img.profile-image {
 body,
 #intro,
 #portfolio,
+#skills,
 ul.header-nav,
 li.nav-item,
 #bottom-nav {
@@ -132,11 +132,18 @@ ul.footer-nav {
   margin: 0;
 }
 
+#portfolio {
+  border-bottom: 1px dashed #bbb;
+}
+
 #contact {
   border-bottom: 1px solid #ddd;
   padding-bottom: 3rem;
 }
 
+.skill img {
+  max-width: 40vw;
+}
 /* ---- Media Queries ---- */
 @media screen and (min-width: 768px) {
   body {
@@ -148,7 +155,8 @@ ul.footer-nav {
   }
 
   #intro,
-  #portfolio {
+  #portfolio,
+  #skills {
     flex-direction: row;
   }
 
@@ -160,13 +168,27 @@ ul.footer-nav {
     max-width: 40%;
   }
 
+  .skill {
+    max-width: 50vw;
+  }
+
+  .skill img {
+    max-width: 30vw;
+  }
+
   #intro p {
     text-align: left;
     font-size: 1.2rem;
     order: -1;
   }
 
-  #portfolio {
+  #portfolio p,
+  #skills p {
+    padding: 0 2rem;
+  }
+
+  #portfolio,
+  #skills {
     flex-wrap: wrap;
   }
 
@@ -177,7 +199,9 @@ ul.footer-nav {
   .contact-invite {
     padding: 0 15vw 3vw;
   }
-  .project {
+
+  .project,
+  .skill {
     margin: 0 0.5rem 4rem;
     flex: 1 40%;
   }
@@ -229,7 +253,12 @@ ul.footer-nav {
     max-width: 1200px;
   }
 
-  .project {
+  .skill img {
+    max-width: 20vw;
+  }
+
+  .project,
+  .skill {
     flex-basis: 30%;
   }
 }
