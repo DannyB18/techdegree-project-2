@@ -56,6 +56,7 @@ header p,
 
 img {
   max-width: 100%;
+  margin: auto;
 }
 
 a {
@@ -72,7 +73,8 @@ span {
 
 .heading {
   padding: 3rem;
-  margin: 0;
+  margin: auto;
+  width: 100%;
 }
 
 .project {
@@ -88,15 +90,16 @@ img.profile-image {
   max-width: 70%;
 }
 
-.containter,
+#intro, #portfolio,
 ul.header-nav,
-li.nav-item
+li.nav-item, #bottom-nav
 /* ul.footer-nav, */
 /* nav.secondary-nav  */ {
   display: flex;
 }
 
-ul.header-nav {
+ul.header-nav,
+.container {
   flex-direction: column;
 }
 
@@ -112,12 +115,12 @@ li.nav-item {
 }
 
 #bottom-nav {
-  display: flex;
+  flex-direction: row;
   justify-content: space-between;
   margin: 0.5rem 1rem;
 }
 
-li.footer-nav-item {
+ul.footer-nav {
   display: none;
 }
 
@@ -132,3 +135,67 @@ li.footer-nav-item {
 }
 
 /* ---- Media Queries ---- */
+@media screen and (min-width: 768px) {
+  body {
+    margin: 50px 0;
+  }
+
+  .main-nav {
+    margin: 0 30%;
+  }
+
+  #intro,
+  #portfolio {
+    flex-direction: row;
+  }
+
+  .intro-item {
+    margin: 10px;
+  }
+
+  #intro img {
+    max-width: 40%;
+  }
+
+  #intro p {
+    text-align: left;
+    font-size: 1.2rem;
+    order: -1;
+  }
+
+  #portfolio {
+    flex-wrap: wrap;
+  }
+
+  #bottom-nav {
+    align-items: center;
+  }
+
+  .project {
+    margin: 0 0.5rem 4rem;
+    flex: 1 40%;
+  }
+
+  ul.header-nav {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  ul.footer-nav {
+    display: flex;
+  }
+
+  li.nav-item {
+    background-color: rgba(0, 0, 0, 0);
+    /* flex: 1; */
+  }
+
+  .footer-nav-item a {
+    padding: 0.75rem;
+    align-self: center;
+  }
+
+  .to-top {
+    display: none;
+  }
+}
